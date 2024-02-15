@@ -1,0 +1,21 @@
+version: "3"
+services:
+
+  task1:
+    build: ./task1
+    stdin_open: true
+    container_name: task1
+    ports:
+      - "5173:5173"
+
+  task2:
+    build: ./task2
+    container_name: task2
+    ports:
+      - "5000:5000"
+
+  task3:
+    build: ./task3
+    container_name: task3
+    ports:
+      - "5001:5001"
