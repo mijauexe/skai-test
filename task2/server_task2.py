@@ -58,7 +58,6 @@ def process_data():
         # Identify unauthorized sales
         unauthorized_sales = identify_unauthorized_sales(productListings, salesTransactions)
 
-        # Return a response
         response = {
             "unauthorized_sales": unauthorized_sales
         }
@@ -73,4 +72,4 @@ def process_data():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port = 5000, host="0.0.0.0")
